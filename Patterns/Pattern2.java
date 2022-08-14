@@ -16,7 +16,7 @@ public class Pattern2
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter value of n : ");
+        System.out.print("Enter the  value of no. of rows :  ");
         int n = sc.nextInt();
         invertedStar(n);
 
