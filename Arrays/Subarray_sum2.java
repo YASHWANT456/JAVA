@@ -36,7 +36,7 @@ public class Subarray_sum2
     {
         int arr[] = {1,2,3,4,5};
         int ans = maxSubarraySum(arr);
-        System.out.println("Maximun subarray sum : " + ans);
+        System.out.println("Maximun subarray sum : " + ans); 
     }
     
 }
