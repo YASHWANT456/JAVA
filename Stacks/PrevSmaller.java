@@ -8,7 +8,7 @@ public class PrevSmaller
         Stack<Integer>st = new Stack<>();
         for(int i = 0; i< n; i++)
         {
-            while( !st.isEmpty() && arr[i] >= arr[st.peek()])
+            while( !st.isEmpty() && arr[i] <= arr[st.peek()])
             {
                 st.pop();
             }
@@ -30,7 +30,7 @@ public class PrevSmaller
         int n = arr.length;
         int ans[] = new int[n];
         prevSmaller(arr, ans);
-        System.out.println(" greater  : ");
+        System.out.println("Previous smaller  : ");
         for(int i = 0;i<n;i++)
         {
             System.out.print(ans[i] + " ");
