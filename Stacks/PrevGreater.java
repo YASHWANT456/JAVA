@@ -1,12 +1,12 @@
 import java.util.*;
 
-public class PrevSmaller 
+public class PrevGreater 
 {
-    public static void prevSmaller(int arr[],int ans[])
+    public static void prevGreater(int arr[],int ans[])
     {
         int n = arr.length;
         Stack<Integer>st = new Stack<>();
-        for(int i = 0; i< n; i++)
+        for(int i = 0;i<n;i++)
         {
             while( !st.isEmpty() && arr[i] >= arr[st.peek()])
             {
@@ -29,8 +29,8 @@ public class PrevSmaller
         int arr[] =  {6,8,0,1,3};
         int n = arr.length;
         int ans[] = new int[n];
-        prevSmaller(arr, ans);
-        System.out.println(" greater  : ");
+        prevGreater(arr, ans);
+        System.out.println("prev greater  : ");
         for(int i = 0;i<n;i++)
         {
             System.out.print(ans[i] + " ");
