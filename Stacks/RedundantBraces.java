@@ -39,14 +39,14 @@ public class RedundantBraces
     }
     public static void main(String args[])
     {
-        String str = "((a+b)+(c+d))";
+        String str = "(((a+b)+(c+d)))";
         if(redundantBraces(str))
         {
-            System.out.println("Redundant Braces");
+            System.out.println("Expression has redundant braces");
         }
         else
         {
-            System.out.println("Not");
+            System.out.println("Expression does not have redundant braces");
         }
     }
     
