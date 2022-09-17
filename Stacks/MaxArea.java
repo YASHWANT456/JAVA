@@ -30,7 +30,7 @@ public class MaxArea
         {
             while( !st.isEmpty() && arr[i] <= arr[st.peek()])
             {
-                st.pop();
+                st.pop ();
             }
             if( st.isEmpty())
             {
